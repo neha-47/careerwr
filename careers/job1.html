@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Wicked Ride</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+   <script src="https://www.google.com/recaptcha/api.js" async defer></script>       
+
+	 <style>
+       
+ .form-group.required .control-label:after {
+  content:"*";
+  color:red;
+ 
+    }
+	
+	 .container{
+    background: url("image/DSC_0126.jpg"); 
+    background-size: cover;
+	float-top: left;
+         }
+		 
+	h2{
+	font-family: Times New Roman;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	color: black;
+	}
+	
+     .form-group{
+	 color:black;
+	 font-weight: bold;
+     }	
+	 
+	 .btn.btn-default{
+	 font-weight: bold;
+	 color: black;
+	 margin: auto;
+	 display: block;
+	 }
+	 
+
+    	
+     </style>
+
+	 <script>
+  $(document).ready(function() {
+  $(".name1").hide();
+    $("input[name$='referrence']").change(function() {
+        var refered = $(this).val();
+        $(".name1").toggle();
+        if ($("div#" + refered).length > 0) $("div#" + refered).show();
+    })
+});
+</script>
+</head>
+<body>
+
+<div class="container">
+<img src="image/4c5150ab235519b23e9355f861aa7de24e48c36acom.png" height="150" width="150"/>
+  <h2>APPLICATION FORM</h2><br><br>
+    <div class="form-group required">
+       <label class="col-md-2 control-label">Name:</label>
+       <div class="col-md-4">
+         <input class="form-control" id="id_username"  name="name" placeholder="Full Name" required="required" title="" type="text" />
+       </div>
+    </div> 
+	<br><br>
+    <div class="form-group required">
+      <label class="col-md-2 control-label">Email:</label>
+	  <div class="col-md-4">
+      <input type="email" class="form-control" id="email" placeholder="Enter email-id" name="email" title="" type="text"/>
+    </div>
+	</div>
+	<br><br>
+    <div class="form-group required">
+      <label class="col-md-2 control-label">Contact No.:</label>
+	   <div class="col-md-4">
+      <input type="number" class="form-control" id="number" placeholder="Enter contact" name="phone" title="" type="test"/>
+    </div>
+     </div>
+	<br><br>
+	
+     <div class="dropdown form-group required">
+      <label class="col-md-3 control-label">Current Employment Status:</label><br>
+	  <div class="col-md-5">
+      <form action="">
+     <input type="radio" name="Employed" value="Employed"> Employed<br>
+     <input type="radio" name="Employed" value="Self-Employed"> Self-Employed<br>
+     <input type="radio" name="Employed" value="Unemployed"> Unemployed<br>
+	 <input type="radio" name="Employed" value="Student">Student<br>
+     </form>
+	 </div>
+    </div>
+	<br><br><br><br>
+	 <div class="form-group required">
+      <label class="col-md-2 control-label">Resume:</label>
+	  <div class="col-md-4">
+      <input type="file" class="form-control" id="file" placeholder="Upload Resume" name="Resume" title="" type="test"/>
+      </div>
+	 </div>
+	 <br><br>
+     <div class="form-group">
+      <label class="col-md-2 control-label">Referral:</label>
+      <form action="">
+	  
+	     <div class="radio1">
+	     <div class="col-md-1">		 
+     <input type="radio" name="referrence" value="yeses"> Yes
+	 </div>
+	  <input type="radio" name="referrence" value="no"> No<br>
+	  </div>
+     </form>
+    </div>
+	    
+		  <div id="yes" class="name1">   
+		  <div class="form-group">
+              <label class="col-md-2 control-label">Name(Full Name):</label>
+	          <div class="col-md-4">
+            <input type="name" class="form-control" id="name" placeholder="Enter name" name="name" title="" type="test"/>
+	         </div><br><br>
+	   <label class="col-md-2 control-label">Designation:</label>
+	   <div class="col-md-4">
+      <input type="text" class="form-control" id="Designation" placeholder="Enter designation" title="" type="test"/>
+	  </div>
+	  </div>
+	  </div><br><br>
+	  
+	   <form action="?" method="POST">
+      <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+      <br/>
+	  <button type="submit" class="btn">Submit</button>
+    </form>
+	 
+	<div>
+    <button type="submit" class="btn btn-default">Apply</button>
+     </div>
+
+	   
+  
+	 
+</body>
+</html>

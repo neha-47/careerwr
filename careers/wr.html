@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Wicked Ride</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/876bae44cf.js"></script>
+  
+  <style>
+  html{overflow-x:hidden;}
+  #bg-one{background: url('image/DSC_01181.jpg'); position:relative; min-height: 856px; background-size: 100%; }
+  .inner-box{position:absolute; left:50%; top:50%; transform: translate(-50%, -50%); }
+  
+  #bg-two{background: url('image/DSC_0132.jpg'); position:relative; min-height: 600px; background-size: 100%; }
+  .inner-box-two{position:absolute; left:50%; top:50%;  background:  #cc3600; height: 446px; width: 390px;transform: translate(27%,-50% );}
+  
+  .job1{background:url('http://www.bkpconsulting.com/wp-content/uploads/2015/01/develop-header.jpg');}
+  .job2{background:url('https://www.sogeti.be/globalassets/common/menuimage-355x215/general/thinking-humanoid-355x215.jpg');}
+  .job3{background:url('https://www.creativeboom.com/uploads/articles/67/6741f2f8f1f0cdfdebdcaba2ec046866a4650a82_1200.jpg');}
+  .job4{background:url('https://www.edx.org/sites/default/files/course/image/promoted/capstone_project_378x225.jpg');}
+  .job5{background:url('https://cdn.lynda.com/static/landing/images/hero/iOS_10_App_Developer_HeroImage-1485975552582.jpg');}
+  .job6{background:url('https://www.ness.com/wp-content/uploads/2016/12/Coding-The-Infrastructure-image.jpg');}
+  .job7{background:url('http://www.quotafactory.com/wp-content/uploads/2016/05/You%E2%80%99ll-Save-Thousands-by-Building-Productivity-into-Your-SDR-Onboarding-Process-e1462558362904.jpg');}
+  
+  .jobs {
+    min-height: 200px;
+    padding-left: 0;
+    text-align: center;
+    padding-right: 0;
+    padding-top: 0%;
+	background-size: 100%;
+}
+  .show-bg{background:rgba(255, 255, 255, 0.5);min-height:200px; padding-top:19%; padding-bottom: 10px;}
+  
+  #contact{position:relative; min-height:400px; background:red}
+  .contact-inner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-top: 10%;
+}
+  
+  .contact-inner{background:url("http://www.zonaltechsolution.com/images/contact-bg-2.jpg"); background-size: 107%; background-repeat: no-repeat;}
+  
+  navbar-inverse {
+    background-color: #222;
+    border-color: #080808;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.navbar-nav{margin-top:15px;}
+.navbar-inverse {
+   
+    border-radius: 0;
+    margin-bottom: 0;
+}
+      .career{
+	 font-size: 119px;
+	 font-family: Playfair Display;
+    font-weight: bold;
+    line-height: 1.1;
+    color: #ff6600;
+	}
+	
+	 .biker{
+	 font-family: Avenir Light;
+	 font-size: 30px;
+	 color: #ff6600;
+	 }
+	 
+	 .about{
+	 font-family: Playfair Display;
+	 font-weight: bold;
+	 font-size: 60px;
+	 color: black;
+	 }
+	 
+	 .wr{
+	 font-size: 18px;
+	 font-style: italic;
+	 color: black;
+	 }
+	 
+	 
+	 .jb{
+	 font-size: 70px;
+	 font-family: Playfair Display;
+	 font-weight: bold;
+	 color: black;
+	 }
+	 
+	 .contact{
+	 font-size: 46px;
+	 font-family: Playfair Display;
+	 font-weight: bold;
+	 color: white;
+	 }
+	 
+	 .pi{
+	 font-family: Avenir Light;
+	 font-size: 16px;
+	 color: white;
+	 font-weight: bold;
+	 }
+     .fo{
+	 color: white;
+	 
+	 }
+    
+	 #footer .fa{font-size:20px; margin-left:18px;}
+  #footer{padding-top:10px; padding-bottom:10px; background-color: black;}
+  
+  
+  @media(min-width:320px) and (max-width:980px){
+  
+   
+  .inner-box {
+
+    width: 100%;
+	
+		}
+
+
+  #bg-two {
+ 
+			background-repeat: no-repeat;
+			background: black;
+		}
+
+
+	.inner-box-two {
+				width: 86%;
+			}
+     
+	 }
+ 
+  </style>
+  
+  <script>
+  </script>
+  
+ 
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <img src="image/4c5150ab235519b23e9355f861aa7de24e48c36acom.png" height="80" width="100"/>
+    </div>
+    <div class="navbar-right collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#jo">Job Openings</a></li>
+        <li><a href="#co">Contact</a></li>
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+ 
+   <div id="home">
+ <div class="container-fluid text-center" id="bg-one">
+	<div class="inner-box">
+			<h1 class="career">Careers @ Wicked Ride </h1> 
+				<h4 class="biker">BIKER DESTINATION CONCLUDE </h4>
+				<a href="http://www.wickedride.com/"> VISIT OUR WEBSITE</a>
+	</div>
+ </div>
+  </div>
+ 
+ <div id="about">
+ <div class="container-fluid text-center" id="bg-two">
+	<div class="inner-box-two">
+				<h2 class="about"> ABOUT US </h2>
+				<p class="wr">Wicked Ride, one of India's largest bike rental companies with a presence across 13+ cities and New Zealand. Over the years, Wicked Ride has clocked over 10 million km and catered to over 2.5 lakh customers since inception. Along with Wicked Ride, we run another brand alongside called Metro Bike.
+        Wicked Ride caters to the premium segment dealing with bikes such as Harley Davidson, Ducati, Honda, KTM, Royal Enfield etc and Metro Bikes caters to the utility segment dealing with the last minute commute problems faced by commuters.  </p>
+				
+	</div>
+ </div>
+ </div>
+ 
+ 
+ <div id="jo">
+<div class="container-fluid" id="job-opening">
+
+<h1 class="text-center jb"> Job Openings </h1>
+	<div class="row">
+	
+	
+		<div class="col-md-4 jobs job1" >
+		<div class="show-bg">
+				<a href="indi.html"><h2> Business Development </h2></a>
+			</div> 
+		</div>
+		
+		<div class="col-md-4 jobs job2" >
+		 	<div class="show-bg">
+				<a href= "strategic.html" ><h2> Strategic Alliance Manager </h2> </a>
+			</div> 
+		</div>
+		
+		<div class="col-md-4 jobs job3" >
+		 	<div class="show-bg">
+			<a href="creative.html"><h2> Creative Designer </h2> </a>
+			</div>
+		</div>
+		
+		<div class="col-md-4 jobs job4" >
+		 	<div class="show-bg">
+			 <a href="android.html">	<h2> Android Developer </h2> </a>
+			</div> 
+		</div>
+		
+		<div class="col-md-4 jobs job5" >
+		 	<div class="show-bg">
+			<a href="ios.html">	<h2> ios Developer </h2> </a>
+			</div> 
+		</div>
+		
+		<div class="col-md-4 jobs job6" >
+		 	<div class="show-bg">
+			 <a href="node.html">	<h2> Node.js </h2> </a>
+			</div> 
+		</div>
+		
+		<div class="col-md-4 jobs job7" >
+			<div class="show-bg">
+            <a href="social.html"><h2> Social Media Analyst </h2> </a>
+			</div> 
+		</div>
+		
+		
+		</div>
+</div>
+</div>
+ 
+ <div id="co">
+ <div class="container-fluid" id="contact">
+ 
+ <div class="wrap-inner">
+ 
+		<div class="contact-inner">
+		
+		<h3 class="contact"> Contact Us </h3>
+		<div class="pi">
+		<p>ADDRESS:1705, 2nd floor, East End A Main Road, Jayanagara 9th Block, Jayanagar, Bengaluru, Karnataka 560069, India</p>
+		<p>TEL: +91 8880 299 299  | reservations@wickedride.com</p>
+		</div>
+		</div>
+ 
+ </div>
+ </div>
+</div>
+
+     <div class="row">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.845960488907!2d77.59519131468241!3d12.917620219555905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae150616ed4e4f%3A0x2029c846874ffe37!2sWicked+Ride+-+Admin+Block!5e0!3m2!1sen!2sin!4v1510567041446" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+	
+	<script>
+  $(document).ready(function(){
+  
+   $('.show-bg').hide();
+
+		$('.jobs').mouseover(function() {
+		
+				$(this).children('.show-bg').show();
+				//$('.show-bg').show();
+		});
+		
+		
+		$('.jobs').mouseleave(function() {
+			 //$('.show-bg').hide();
+			 $(this).children('.show-bg').hide();
+		});
+   
+});
+  
+ 
+
+  </script>
+  
+     <div class="container-fluid" id="footer">
+ 
+	     <div class="col-md-6">
+	     <p class="fo">© 2017 WICKEDRIDE ADVENTURE SERVICES PVT. LTD.</p>
+	     </div>
+	
+	     <div class="col-md-6 text-right">
+	     <a href="https://www.facebook.com/wickedrideindia"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+	
+	     <a href="https://www.instagram.com/wickedride"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+	     </div>
+ 
+    </div>
+</body>
+</html>
